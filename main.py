@@ -64,7 +64,7 @@ print("6.exit")
 
 while True:
     # take input from the user
-    choice = input("Enter choice(1/2/3/4/5): ")
+    choice = input("Enter choice(1/2/3/4/5/6): ")
 
     # check if choice is one of the four options
     if choice in ('1', '2', '3', '4','5'):
@@ -100,8 +100,11 @@ while True:
         # check if user wants another calculation
         # break the while loop if answer is no
         if exit()==False:
-            break
-       
+            check = input("Do you want to exit? (yes/no): ")
+            if check.lower() == "yes":
+                break
+            elif check.lower() == "no":
+                continue
 
 
     else:
