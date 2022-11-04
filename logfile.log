@@ -17,3 +17,6 @@ error: invalid input : 52
 error: invalid input : as
 error: invalid input : wwww
 error: invalid input : ewqq
+info: multiply(3.0, 2.0)=6.0
+info: divide(2.0, 3.0)=0.6666666666666666
+error: invalid input : 6
