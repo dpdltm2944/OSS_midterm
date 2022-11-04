@@ -5,3 +5,7 @@ Add function called
 add(3.0, 4.0)
 add(3.0, 4.0)=7.0
 subtract(3.0, 4.0)=-1.0
+divide(3.0, 0.0)=0
+divide(3.0, 0.0)=0
+error: divide(3.0, 0.0)=0
+info: multiply(3.0, 4.0)=12.0

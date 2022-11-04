@@ -9,24 +9,29 @@ logger.setLevel(logging.DEBUG)
 
 # This function adds two numbers
 def add(x, y):
-    logger.info(f'add({x}, {y})={x+y}')
+    logger.info(f'info: add({x}, {y})={x+y}')
     return x + y
 
 # This function subtracts two numbers
 def subtract(x, y):
-    logger.info(f'subtract({x}, {y})={x-y}')
+    logger.info(f'info: subtract({x}, {y})={x-y}')
     return x - y
 
 
 # This function multiplies two numbers
 def multiply(x, y):
-    logger.info(f'multiply({x}, {y})={x*y}')
+    logger.info(f'info: multiply({x}, {y})={x*y}')
     return x * y
 
 #Need to define divide function.
 def divide (x,y):
-    logger.info(f'divide({x}, {y})={x/y}')
-    return x/y
+    if y==0:
+        logger.error(f'error: divide({x}, {y})=0')
+        print("0으로 나눌 수 없습니다.")
+        return 0
+    else:    
+        logger.info(f'info: divide({x}, {y})={x/y}')
+        return x/y
 
 print("Calculator started.")
 
