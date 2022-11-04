@@ -32,6 +32,11 @@ def divide (x,y):
     else:    
         logger.info(f'info: divide({x}, {y})={x/y}')
         return x/y
+#
+def invalid():
+    logger.error(f'error: invalid input')
+    print("잘못된 입력입니다.")
+    return 0
 
 print("Calculator started.")
 
@@ -77,6 +82,7 @@ while True:
                 print(line)
 
             test.close()
+           
             
 
         # check if user wants another calculation
@@ -86,6 +92,7 @@ while True:
             break
 
     else:
+        logger.error(f'error: invalid input : {choice}')
         print("Invalid Input")
 
 
