@@ -33,8 +33,8 @@ def divide (x,y):
         logger.info(f'info: divide({x}, {y})={x/y}')
         return x/y
 #
-def invalid():
-    logger.error(f'error: invalid input')
+def invalid(choice):
+    logger.error(f'error: invalid input : {choice}') 
     print("잘못된 입력입니다.")
     return 0
 
@@ -92,8 +92,7 @@ while True:
             break
 
     else:
-        logger.error(f'error: invalid input : {choice}')
-        print("Invalid Input")
+        invalid(choice)
 
 
 
